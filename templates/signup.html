@@ -1,0 +1,71 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener | Signup</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="icon" href="https://docrdsfx76ssb.cloudfront.net/static/1594843646/pages/wp-content/uploads/2019/02/favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="nav-signup">
+        <nav>
+            <a class="" href="{% url 'index' %}"><img src="{% static 'images/bitly.png' %}" alt="logo" class="logo" /></a>
+        </nav>
+        <hr>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3 class="signup">Sign up and start shortening</h3>
+            <p class="have-account mt-3">Already have an account? <a href="{% url 'login' %}">Log in</a> •
+                <a href="">Log in
+                    with SSO</a>
+            </p>
+            <a class="signup-google mt-3" href=""><img src="//d1ayxb9ooonjts.cloudfront.net/8bc625062aeffa94729b9336243bed9d.svg" alt="google" width="20"> Sign up with Google</a>
+            <p class="seperator text-center mt-2 text-secondary"><span>OR</span></p>
+            <div class="register">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="col mb-3 text-secondary">
+                        <label for="id_username">Username</label>{{ user_form.username }}
+                    </div>
+                    <em class="text-danger"> {{ user_form.username.errors }}</em>
+                    <div class="col mb-3 text-secondary">
+                        <label for="id_email">Email address</label> {{ user_form.email}}
+                    </div>
+                    <em class="text-danger">{{ user_form.email.errors }}</em>
+                    <div class="col mb-4 text-secondary">
+                        <label for="id_password">Password</label> {{ user_form.password }}
+                    </div>
+                    <em class="text-danger">{{ user_form.password.errors }}</em>
+                    <button class="btn-signup" type="submit">Sign up
+                        with
+                        Email</button>
+                </form>
+                <div class="text-secondary terms"><span>By creating an account, you agree to</span><br><span>Bitly's
+                        Terms
+                        of
+                        Service and Privacy Policy.</span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var fields = document.getElementsByTagName('input')
+        for (var i in fields) {
+            fields[i].className = 'form-control'
+        }
+    </script>
+</body>
+
+</html>

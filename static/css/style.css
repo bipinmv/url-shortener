@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    height: auto;
+    width: 6rem;
+    margin-right: 5rem;
+}
+
+body a:link {
+    text-decoration: none;
+}
+
+nav img {
+    padding-top: 1rem;
+}
+
+.bg-content {
+    background-color: black;
+    width: auto;
+    height: 50rem;
+}
+
+.navlink {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(92, 89, 89);
+    padding-right: 2.5rem;
+}
+
+.navlink:hover {
+    color: rgb(32, 85, 233);
+}
+
+.getquote-btn {
+    background-color: rgb(33, 90, 212);
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.background {
+    /* background-image:url('{{ STATIC_URL }}images/illo-desktop.jpg'); */
+    background-image: url("https://docrdsfx76ssb.cloudfront.net/static/1594843646/pages/wp-content/uploads/2020/05/illo-desktop-1440x651-1.jpg");
+    background-repeat: no-repeat;
+    min-height: 650px;
+    position: relative;
+    background-position: 56% 0;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    transition: all 300ms;
+    margin-top: -2px;
+}
+
+.section-contents {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -35%);
+}
+
+.large {
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: 750;
+    color: rgb(34, 32, 32);
+}
+
+.login {
+    margin-left: 5rem;
+}
+
+.section-contents h3 {
+    font-size: 24px;
+    color: rgb(97, 92, 92);
+}
+
+.section-contents button {
+    background-color: rgb(33, 90, 212);
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    margin-top: 3rem;
+    font-size: 18px;
+}
+
+.urlbar {
+    background-color: #0b1736;
+    width: auto;
+    height: auto;
+    padding-bottom: 1.5rem;
+}
+
+.urlbar-1 {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.urlinput {
+    /* padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 43rem; */
+    width: 920px;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.btn-shorten {
+    background-color: rgb(18, 51, 128);
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    color: rgb(224, 217, 217);
+    padding: 1rem 5rem;
+    font-size: 20px;
+}
+
+.btn-shorten:hover {
+    background-color: rgb(40, 97, 204);
+}
+
+.urlbar p {
+    color: rgb(146, 135, 135);
+    font-size: 13px;
+    text-align: center;
+}
+
+.scroll {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .urlbar-1 {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .urlinput {
+        width: 600px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    .section-contents button {
+        margin-top: 1rem;
+    }
+    .btn-shorten {
+        padding: 1rem 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-last {
+        background-color: rgb(14, 14, 44);
+    }
+    .urlbar {
+        position: absolute;
+        top: 80%;
+    }
+    .urlbar-1 {
+        padding: 1rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .urlinput {
+        width: 325px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    .section-contents button {
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 0.8rem 4.6rem;
+        left: 20%;
+    }
+    .btn-shorten {
+        padding: 1rem 135px;
+        font-size: 1rem;
+    }
+    .large {
+        font-size: 2.3rem;
+        font-weight: 700px;
+        /* font-size: 38px;
+        line-height: 38px;
+        font-weight: 800; */
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+    .section-contents {
+        position: absolute;
+        margin-top: -4.5rem;
+        width: 80%;
+        top: 70%;
+        left: 70%;
+        /* transform: translate(-75%, -35%); */
+    }
+    .section-contents h3 {
+        font-size: 18px;
+    }
+    .background {
+        background-repeat: no-repeat;
+        /* min-height: 450px; */
+        background-size: 800px 350px;
+        background-position: 99% 0;
+        background-color: #fff;
+    }
+    nav li {
+        font-size: 1.4rem;
+        color: black;
+        margin-top: 1.2rem;
+    }
+    .login {
+        margin-left: 0;
+    }
+    .nav-last {
+        background-color: #0b1736;
+        width: 100%;
+        height: auto;
+    }
+    .section-contents p {
+        position: absolute;
+        left: 20%;
+    }
+    .scroll {
+        margin-top: 190px;
+    }
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    height: 3.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    margin: auto 12%;
+}
+
+.scroll-down {
+    text-align: center;
+    margin-top: -1rem;
+    font-size: 24px;
+    color: rgb(88, 84, 84);
+}
+
+#entered-url {
+    font-size: 1rem;
+    color: black;
+    /* text-align: left; */
+    /* margin: auto 2rem; */
+}
+
+.entered-url {
+    position: relative;
+    margin: 1rem 2rem;
+}
+
+#shorturlresult {
+    font-size: 1rem;
+    color: rgb(51, 78, 199);
+}
+
+
+/* signup */
+
+.nav-signup {
+    margin: 0 7%;
+}
+
+.flex-container {
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.have-account {
+    color: rgb(102, 94, 94);
+    font-weight: 500;
+}
+
+.signup {
+    font-size: 32px;
+    margin-top: 30px;
+    font-weight: 650;
+    color: #4f565a;
+    text-align: center;
+}
+
+.signup-google {
+    display: inline-block;
+    background-color: #2a5bd7;
+    color: white;
+    width: 100%;
+    border-radius: 3px;
+    height: 2.5rem;
+    padding-top: 5px;
+}
+
+.signup-google:hover {
+    background-color: #355bbb;
+    color: white;
+}
+
+.terms {
+    font-size: 14px;
+    margin-top: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.register {
+    text-align: left;
+    margin-top: 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-signup {
+    text-align: center;
+    background-color: #2a5bd7;
+    color: white;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+}
+
+.invalid {
+    display: none;
+    justify-content: center;
+    width: 77%;
+    height: 3.5rem;
+    background-color: rgb(187, 65, 65);
+    border-radius: 0.5rem;
+    font-size: 46px;
+    margin: auto 12%;
+}
+
+.sso {
+    text-decoration: underline;
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+}
