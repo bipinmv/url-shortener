@@ -104,15 +104,12 @@ nav img {
 }
 
 .urlinput {
-    /* padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 43rem; */
     width: 920px;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     font-size: 1rem;
     text-align: left;
+    margin-right: 1rem;
 }
 
 .btn-shorten {
@@ -139,111 +136,16 @@ nav img {
     margin-top: 1rem;
 }
 
-@media screen and (max-width: 800px) {
-    .urlbar-1 {
-        padding: 1rem 2rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-    .urlinput {
-        width: 600px;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-    }
-    .section-contents button {
-        margin-top: 1rem;
-    }
-    .btn-shorten {
-        padding: 1rem 300px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .nav-last {
-        background-color: rgb(14, 14, 44);
-    }
-    .urlbar {
-        position: absolute;
-        top: 80%;
-    }
-    .urlbar-1 {
-        padding: 1rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-    .urlinput {
-        width: 325px;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-    }
-    .section-contents button {
-        margin-top: 1rem;
-        font-size: 1rem;
-        padding: 0.8rem 4.6rem;
-        left: 20%;
-    }
-    .btn-shorten {
-        padding: 1rem 135px;
-        font-size: 1rem;
-    }
-    .large {
-        font-size: 2.3rem;
-        font-weight: 700px;
-        /* font-size: 38px;
-        line-height: 38px;
-        font-weight: 800; */
-        margin-top: 0;
-        margin-bottom: .5rem;
-    }
-    .section-contents {
-        position: absolute;
-        margin-top: -4.5rem;
-        width: 80%;
-        top: 70%;
-        left: 70%;
-        /* transform: translate(-75%, -35%); */
-    }
-    .section-contents h3 {
-        font-size: 18px;
-    }
-    .background {
-        background-repeat: no-repeat;
-        /* min-height: 450px; */
-        background-size: 800px 350px;
-        background-position: 99% 0;
-        background-color: #fff;
-    }
-    nav li {
-        font-size: 1.4rem;
-        color: black;
-        margin-top: 1.2rem;
-    }
-    .login {
-        margin-left: 0;
-    }
-    .nav-last {
-        background-color: #0b1736;
-        width: 100%;
-        height: auto;
-    }
-    .section-contents p {
-        position: absolute;
-        left: 20%;
-    }
-    .scroll {
-        margin-top: 190px;
-    }
+.hey-user {
+    margin-left: 4rem;
 }
 
 .result {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
     width: 77%;
-    height: 3.5rem;
+    height: auto;
     background-color: white;
     border-radius: 0.5rem;
     font-size: 20px;
@@ -260,8 +162,6 @@ nav img {
 #entered-url {
     font-size: 1rem;
     color: black;
-    /* text-align: left; */
-    /* margin: auto 2rem; */
 }
 
 .entered-url {
@@ -269,13 +169,15 @@ nav img {
     margin: 1rem 2rem;
 }
 
+.output-url {
+    margin: 1rem 2 rem;
+}
+
 #shorturlresult {
     font-size: 1rem;
     color: rgb(51, 78, 199);
+    margin: 1rem 2rem;
 }
-
-
-/* signup */
 
 .nav-signup {
     margin: 0 7%;
@@ -367,4 +269,243 @@ nav img {
 .continue {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 400px) {
+    .urlbar {
+        position: absolute;
+        top: 80%;
+    }
+    .urlbar-1 {
+        padding: 1rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .urlinput {
+        width: 325px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+    .section-contents button {
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 0.8rem 4.6rem;
+        left: 20%;
+    }
+    .btn-shorten {
+        padding: 1rem 135px;
+        font-size: 1rem;
+    }
+    .large {
+        font-size: 2.3rem;
+        font-weight: 700px;
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+    .section-contents {
+        position: absolute;
+        margin-top: -4.5rem;
+        width: 80%;
+        top: 70%;
+        left: 70%;
+        /* transform: translate(-75%, -35%); */
+    }
+    .section-contents h3 {
+        font-size: 18px;
+    }
+    .background {
+        background-repeat: no-repeat;
+        /* min-height: 450px; */
+        background-size: 800px 350px;
+        background-position: 99% 0;
+        background-color: #fff;
+    }
+    nav li {
+        font-size: 1.4rem;
+        color: black;
+        margin-top: 1.2rem;
+    }
+    .nav-last {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #0b1736;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        padding-bottom: 2rem;
+        border-radius: 10px;
+    }
+    .section-contents p {
+        position: absolute;
+        left: 20%;
+    }
+    .scroll {
+        margin-top: 190px;
+    }
+    .getquote-btn {
+        font-size: 1.1rem;
+    }
+    .login {
+        margin-left: auto;
+    }
+    .result {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: auto;
+        background-color: white;
+        border-radius: 0.5rem;
+        font-size: 20px;
+        margin: auto;
+    }
+}
+
+@media (min-width:402px) and (max-width:600px) {
+    .urlbar {
+        position: absolute;
+        top: 78%;
+        width: 100%;
+    }
+    .urlbar-1 {
+        display: flex;
+        justify-content: center;
+    }
+    .urlinput {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .section-contents button {
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 0.8rem 4.6rem;
+        left: 20%;
+    }
+    .btn-shorten {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .large {
+        font-size: 2.3rem;
+        font-weight: 700px;
+        /* font-size: 38px;
+        line-height: 38px;
+        font-weight: 800; */
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+    .section-contents {
+        position: absolute;
+        margin-top: -4.5rem;
+        width: 80%;
+        top: 70%;
+        left: 70%;
+        /* transform: translate(-75%, -35%); */
+    }
+    .section-contents h3 {
+        font-size: 18px;
+    }
+    .background {
+        background-repeat: no-repeat;
+        /* min-height: 450px; */
+        background-size: 800px 350px;
+        background-position: 99% 0;
+        background-color: #fff;
+    }
+    nav li {
+        font-size: 1.4rem;
+        color: black;
+        margin-top: 1.2rem;
+    }
+    .nav-last {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #0b1736;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        padding-bottom: 2rem;
+        border-radius: 10px;
+    }
+    .section-contents p {
+        position: absolute;
+        left: 20%;
+    }
+    .scroll {
+        margin-top: 190px;
+    }
+    .getquote-btn {
+        font-size: 1.1rem;
+    }
+    .login {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:602px) and (max-width:916px) {
+    .urlbar {
+        position: absolute;
+        top: 85%;
+        width: 100%;
+    }
+    .urlbar-1 {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+    }
+    .urlinput {
+        width: 500px;
+        height: 50px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .section-contents button {
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 0.8rem 4.6rem;
+        left: 20%;
+    }
+    .btn-shorten {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:916px) and (max-width:1230px) {
+    .urlbar {
+        position: absolute;
+        top: 85%;
+        width: 100%;
+    }
+    .urlbar-1 {
+        padding: auto;
+        display: block;
+    }
+    .urlinput {
+        width: 855px;
+        height: 50px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+    .section-contents button {
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 0.8rem 4.6rem;
+        left: 20%;
+    }
+    .btn-shorten {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+    }
 }
